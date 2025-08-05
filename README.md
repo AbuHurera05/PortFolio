@@ -14,7 +14,7 @@ This website showcases my projects, skills, and a bit about who I am as a develo
 
 ## 📸 Screenshots
 
-![Screenshot](assets/images/Screenshot1.png)
+![Screenshot](assets/images/Screenshot2.png)
 
 ---
 
