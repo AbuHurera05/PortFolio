@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Abu Hurera | Portfolio</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+   <link rel="stylesheet" href="css/style.css" />
+
+   <!-- AOS CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+   <!-- Google Font -->
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+   <!-- Bootstrap Icons -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+   <!-- Animate.css CDN for smooth fade effects -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+   <style>
+      #scrollTopBtn {
+         display: none;
+         position: fixed;
+         bottom: 30px;
+         right: 30px;
+         z-index: 99;
+         font-size: 24px;
+         border: none;
+         outline: none;
+         background-color: #343a40;
+         color: white;
+         cursor: pointer;
+         padding: 10px 15px;
+         border-radius: 10px;
+      }
+
+      .hero-section {
+         background: linear-gradient(to right, #1e3c72, #2a5298);
+         color: white;
+         padding: 100px 0;
+         text-align: center;
+      }
+
+      .tech-stack {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 15px;
+      }
+
+      .tech-item {
+         padding: 10px 20px;
+         background: linear-gradient(135deg, #1e3c72, #2a5298);
+         color: #fff;
+         border-radius: 30px;
+         font-weight: 500;
+         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+         transition: all 0.3s ease;
+         border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .tech-item:hover {
+         transform: scale(1.05);
+         background: linear-gradient(135deg, #4b6cb7, #182848);
+         box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+         cursor: pointer;
+      }
+   </style>
+</head>
+
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-transparent shadow-sm fixed-top glass-navbar">
+      <div class="container">
+         <a class="navbar-brand fw-bold text-white" href="#">Abu Hurera</a>
+
+         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <div class="collapse navbar-collapse animate__animated animate__fadeInDown" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto text-center">
+               <li class="nav-item">
+                  <a class="nav-link text-white" href="#about">About</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="projectDropdown" role="button"
+                     data-bs-toggle="dropdown" aria-expanded="false">
+                     Projects
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end animate__animated animate__fadeIn"
+                     aria-labelledby="projectDropdown">
+                     <li><a class="dropdown-item" href="#webappp">Bus Management</a></li>
+                     <li><a class="dropdown-item" href="#tools">JobSkill</a></li>
+                     <li><a class="dropdown-item" href="#others">Others</a></li>
+                  </ul>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link text-white" href="#skills">Skills</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link text-white" href="#contact">Contact</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+
+   <!-- <header class="bg-dark text-white text-center p-5" data-aos="fade-down">
+      <h1 class="display-3 fw-bold">Abu Hurera</h1>
+      <p class="lead">Software Developer | Web Designer</p>
+      <a href="#projects" class="btn btn-outline-light mt-3">View My Work</a>
+   </header> -->
+
+   <section class="hero-section" data-aos="fade-down">
+      <h1 class="display-3 fw-bold">Abu Hurera</h1>
+      <p class="lead">
+         <span id="typed"></span>
+      </p>
+      <div class="tech-stack mt-4">
+         <div class="tech-item">Java</div>
+         <div class="tech-item">Spring Boot</div>
+         <div class="tech-item">React</div>
+         <div class="tech-item">Bootstrap</div>
+         <div class="tech-item">MySQL</div>
+         <div class="tech-item">GitHub Actions</div>
+         <div class="tech-item">CI/CD</div>
+         <div class="tech-item">REST API</div>
+      </div>
+      <a href="#projects" class="btn btn-light mt-4">View My Work</a>
+   </section>
+
+
+
+   <section id="about" class="container py-5" data-aos="fade-up">
+      <h2 class="text-center mb-5 fw-bold">About Me</h2>
+      <div class="row align-items-center gy-4">
+         <!-- Profile Image -->
+         <div class="col-lg-5 text-center">
+            <div class="profile-pic-container">
+               <img src="assets/images/profilepic.png" class="img-fluid rounded-circle shadow profile-pic" alt="Abu Hurera">
+            </div>
+         </div>
+
+         <!-- About Content -->
+         <div class="col-lg-7">
+            <p class="lead">
+               👋 Hi, I’m <strong>Abu Hurera</strong> — a passionate Full-Stack Developer who loves building
+               creative, clean, and user-friendly websites & systems. I specialize in Java-based backends
+               and modern responsive frontends.
+            </p>
+
+            <div class="row mt-4">
+               <div class="col-sm-6 mb-3">
+                  <strong>📍 Location:</strong> Pakistan
+               </div>
+               <div class="col-sm-6 mb-3">
+                  <strong>📧 Email:</strong> abuhurera52@gmail.com
+               </div>
+               <div class="col-12 mb-3">
+                  <strong>💼 Skills:</strong><br>
+                  <span class="badge bg-primary me-2">Java</span>
+                  <span class="badge bg-success me-2">Spring Boot</span>
+                  <span class="badge bg-info text-dark me-2">React</span>
+                  <span class="badge bg-dark me-2">Bootstrap</span>
+                  <span class="badge bg-warning text-dark me-2">MySQL</span>
+                  <span class="badge bg-secondary me-2">REST API</span>
+               </div>
+               <div class="col-12">
+                  <strong>🚀 Goal:</strong> To build secure, scalable, and beautiful apps that solve real-world
+                  problems.
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <section id="projects" class="bg-light py-5" data-aos="zoom-in-up">
+      <div class="container">
+         <h2 class="text-center fw-bold mb-5">My Projects</h2>
+         <div class="row g-4">
+
+            <!-- Project Card 1 -->
+            <div class="col-md-6 col-lg-4">
+               <div class="project-card card border-0 shadow-lg">
+                  <div class="project-img-container">
+                     <img src="assets/images/project1.jpg" class="card-img-top" alt="Bus Management System">
+                     <div class="overlay">
+                        <a href="#" class="btn btn-outline-light">View Project</a>
+                     </div>
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">Bus Management System</h5>
+                     <p class="card-text">
+                        <i class="fab fa-java text-danger"></i> Java &nbsp;
+                        <i class="fas fa-database text-primary"></i> MySQL &nbsp;
+                        <i class="fab fa-html5 text-warning"></i> HTML/CSS &nbsp;
+                        <i class="fas fa-code text-success"></i> JSP
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="col-md-6 col-lg-4">
+               <div class="project-card card border-0 shadow-lg">
+                  <div class="project-img-container">
+                     <img src="assets/images/project2.jpg" class="card-img-top" alt="JobSkill">
+                     <div class="overlay">
+                        <a href="#" class="btn btn-outline-light">View Project</a>
+                     </div>
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">JobSkill</h5>
+                     <p class="card-text">
+                        <i class="fab fa-java text-danger"></i> Java &nbsp;
+                        <i class="fas fa-database text-primary"></i> MySQL &nbsp;
+                        <i class="fab fa-html5 text-warning"></i> HTML/CSS &nbsp;
+                        <i class="fas fa-code text-success"></i> JSP
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+
+
+   <section id="skills" class="container py-5" data-aos="fade-left">
+      <h2 class="text-center mb-4">Skills</h2>
+      <div class="mb-3">
+         <label>HTML</label>
+         <div class="progress">
+            <div class="progress-bar bg-success" style="width: 90%;">90%</div>
+         </div>
+      </div>
+      <div class="mb-3">
+         <label>CSS</label>
+         <div class="progress">
+            <div class="progress-bar bg-primary" style="width: 80%;">80%</div>
+         </div>
+      </div>
+      <div class="mb-3">
+         <label>JavaScript</label>
+         <div class="progress">
+            <div class="progress-bar bg-warning" style="width: 70%;">70%</div>
+         </div>
+      </div>
+      <div class="mb-3">
+         <label>Java</label>
+         <div class="progress">
+            <div class="progress-bar bg-info" style="width: 85%;">85%</div>
+         </div>
+      </div>
+   </section>
+
+   <section id="contact" class="contact-section py-5 text-white" data-aos="flip-right"
+      style="background: linear-gradient(135deg, #1f1f1f, #3b3b3b);">
+      <div class="container">
+         <h2 class="text-center mb-5">Contact Me</h2>
+         <div class="row">
+            <div class="col-md-5 mb-4 mb-md-0">
+               <div class="bg-secondary rounded p-4 h-100">
+                  <h5>📍 Location</h5>
+                  <p>Hyderabad, Sindh, Pakistan</p>
+                  <h5>📧 Email</h5>
+                  <p>abuhurera52@gmail.com</p>
+                  <h5>📱 Phone</h5>
+                  <p>+92 300 1234567</p>
+                  <div class="mt-4">
+                     <a href="https://linkedin.com/" target="_blank"
+                        class="btn btn-outline-light btn-sm me-2">LinkedIn</a>
+                     <a href="https://github.com/" target="_blank" class="btn btn-outline-light btn-sm">GitHub</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-7">
+               <form onsubmit="submitForm(event)" class="bg-dark p-4 rounded shadow-sm">
+                  <div class="mb-3">
+                     <label class="form-label">Your Name</label>
+                     <input type="text" class="form-control bg-dark text-white border-light"
+                        placeholder="Enter your name" required>
+                  </div>
+                  <div class="mb-3">
+                     <label class="form-label">Your Email</label>
+                     <input type="email" class="form-control bg-dark text-white border-light"
+                        placeholder="Enter your email" required>
+                  </div>
+                  <div class="mb-3">
+                     <label class="form-label">Message</label>
+                     <textarea class="form-control bg-dark text-white border-light" rows="5"
+                        placeholder="Write your message..." required></textarea>
+                  </div>
+                  <div class="text-end">
+                     <button class="btn btn-outline-light" type="submit">Send Message</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <button onclick="topFunction()" id="scrollTopBtn" title="Go to top">↑</button>
+
+   <footer class="bg-dark text-white text-center py-4">
+      <p class="mb-1">© 2025 Abu Hurera. All rights reserved.</p>
+      <div>
+         <a href="https://github.com/" class="text-white mx-2" target="_blank"><i class="bi bi-github"></i></a>
+         <a href="https://linkedin.com/" class="text-white mx-2" target="_blank"><i class="bi bi-linkedin"></i></a>
+         <a href="mailto:abuhurera52@gmail.com" class="text-white mx-2"><i class="bi bi-envelope-fill"></i></a>
+      </div>
+   </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+   <script>
+      AOS.init();
+
+      const scrollTopBtn = document.getElementById("scrollTopBtn");
+      window.onscroll = function () {
+         scrollTopBtn.style.display = document.documentElement.scrollTop > 200 ? "block" : "none";
+      };
+      function topFunction() {
+         document.documentElement.scrollTop = 0;
+      }
+      document.addEventListener("DOMContentLoaded", function () {
+         new Typed("#typed", {
+            strings: [
+               "Full Stack Developer",
+               "Java Programmer",
+               "Spring Boot Specialist",
+               "Cloud Enthusiast"
+            ],
+            typeSpeed: 50,
+            backSpeed: 30,
+            backDelay: 2000,
+            loop: true
+         });
+      });
+   </script>
+   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
+   <!-- Bootstrap JS Bundle (includes Popper.js for dropdowns) -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+   <script src="js/script.js"></script>
+</body>
+
+</html>
