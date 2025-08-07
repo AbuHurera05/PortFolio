@@ -147,6 +147,19 @@ section {
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
 }
+  /* Education */
+.edu-card {
+   background: linear-gradient(to right, #f8f9fa, #e9ecef);
+   border-left: 5px solid #2a5298;
+   transition: all 0.3s ease;
+}
+
+.edu-card:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+   background: linear-gradient(to right, #dee2e6, #ced4da);
+}
+
 
 .project-img-container:hover .overlay {
   opacity: 1;
