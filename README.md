@@ -7,7 +7,8 @@ This website showcases my projects, skills, and a bit about who I am as a develo
 
 ## 🔗 Live Demo
 
-🌐 [View Portfolio](https://abuhurera05.github.io/PortFolio/)  
+🌐 [View Portfolio](https://velvety-raindrop-68e2ba.netlify.app/)  
+
 📁 [GitHub Repository](https://github.com/AbuHurera05/PortFolio)
 
 ---
