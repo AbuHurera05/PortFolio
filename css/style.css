@@ -238,9 +238,7 @@ section {
    }
 }
 
-
-
-
+/* Project Section */
 .project-img-container:hover .overlay {
   opacity: 1;
 }
