@@ -54,7 +54,7 @@ I love creating clean, elegant, and functional websites using modern tech stacks
 ## 📬 Contact
 
 - Email: junejoabuhurera52@gmail.com  
-- LinkedIn: [Coming Soon]  
+- LinkedIn:   
 - GitHub: [AbuHurera05](https://github.com/AbuHurera05)
 
 ---
