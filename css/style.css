@@ -103,6 +103,38 @@ section {
   margin-bottom: 5px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
+/* CV Section Styling */
+.cv-section {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+
+.cv-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0, 114, 255, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+.cv-btn i {
+  margin-right: 8px;
+  transition: transform 0.3s ease;
+}
+
+.cv-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 114, 255, 0.6);
+}
+
+.cv-btn:hover i {
+  transform: translateY(-3px);
+}
+
 
 /* Project Section */
 .project-card {
