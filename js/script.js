@@ -69,3 +69,34 @@ document.addEventListener("DOMContentLoaded", () => {
     once: true
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const skillSection = document.querySelector("#skills");
+  const skillPercents = document.querySelectorAll(".skill-percent");
+  const progressBars = document.querySelectorAll(".progress-bar");
+  let animated = false;
+
+  function animateSkills() {
+    if (!animated && skillSection.getBoundingClientRect().top < window.innerHeight - 100) {
+      skillPercents.forEach((percent, index) => {
+        let target = parseInt(percent.getAttribute("data-percent"));
+        let count = 0;
+        let progressBar = progressBars[index];
+
+        progressBar.style.width = target + "%"; // Animate bar
+
+        let counter = setInterval(() => {
+          if (count < target) {
+            count++;
+            percent.textContent = count + "%";
+          } else {
+            clearInterval(counter);
+          }
+        }, 15); // Speed of counter
+      });
+      animated = true;
+    }
+  }
+
+  window.addEventListener("scroll", animateSkills);
+});
