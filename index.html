@@ -214,18 +214,39 @@
       </div>
    </section>
 
-  <!-- CV Section -->
+ <!-- CV Section -->
 <section id="download-cv" class="py-5 text-center cv-section" data-aos="zoom-in">
   <div class="container">
-    <h2 class="mb-4">📄 Download My CV</h2>
+    <h2 class="mb-4">📄 My CV</h2>
     <p class="mb-4">Want to know more about my skills and experience?  
-      Grab a copy of my professional CV below.</p>
+      View or Download my CV below.</p>
 
-    <a href="assets/files/Abu Hurera CV.pdf" download class="cv-btn">
+    <!-- Buttons -->
+    <a href="assets/files/Abu Hurera CV.pdf" download class="cv-btn me-2">
       <i class="fas fa-download"></i> Download CV
     </a>
+
+    <button class="cv-btn view-btn" data-bs-toggle="modal" data-bs-target="#cvModal">
+      <i class="fas fa-eye"></i> View CV
+    </button>
   </div>
 </section>
+
+<!-- Modal -->
+<div class="modal fade" id="cvModal" tabindex="-1" aria-labelledby="cvModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cvModalLabel">My CV Preview</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="assets/files/Abu Hurera CV.pdf" width="100%" height="600px" style="border:none;"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
    <!-- Projects Section -->
