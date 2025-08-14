@@ -294,10 +294,11 @@ section {
 .progress-bar {
   height: 100%;
   border-radius: 50px;
-  transition: width 1s ease-in-out;
+  width: 0;
+  transition: width 1.5s ease-in-out;
 }
 
-/* Gradient styles for each skill */
+/* Gradient styles */
 .gradient-html {
   background: linear-gradient(90deg, #ff512f, #dd2476);
 }
@@ -310,6 +311,7 @@ section {
 .gradient-java {
   background: linear-gradient(90deg, #00c6ff, #0072ff);
 }
+
 
 
 
