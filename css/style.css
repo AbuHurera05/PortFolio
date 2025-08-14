@@ -111,7 +111,7 @@ section {
 .cv-btn {
   display: inline-block;
   padding: 14px 28px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
   color: white;
   background: linear-gradient(90deg, #0072ff, #00c6ff);
@@ -134,6 +134,11 @@ section {
 .cv-btn:hover i {
   transform: translateY(-3px);
 }
+
+.view-btn {
+  background: linear-gradient(90deg, #ff7eb3, #ff758c);
+}
+
 
 
 /* Project Section */
