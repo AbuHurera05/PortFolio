@@ -104,7 +104,7 @@ section {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-
+/* Project Section */
 .project-card {
   border-radius: 18px;
   overflow: hidden;
@@ -259,20 +259,6 @@ section {
    }
 }
 
-/* Project Section */
-/* .project-img-container:hover .overlay {
-  opacity: 1;
-}
-
-.project-card .btn {
-  transition: all 0.3s ease-in-out;
-  border-radius: 30px;
-}
-
-.project-card .btn:hover {
-  background-color: #fff;
-  color: #000;
-} */
 
 /* Skill Section */
 .skill-item {
