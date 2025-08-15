@@ -119,23 +119,32 @@
       <a href="#projects" class="btn btn-outline-light mt-3">View My Work</a>
    </header> -->
 
-   <section class="hero-section" data-aos="fade-down">
-      <h1 class="display-3 fw-bold">Abu Hurera</h1>
-      <p class="lead">
+   <!-- Hero Section -->
+   <section class="hero-section d-flex flex-column justify-content-center align-items-center text-center"
+      data-aos="fade-down">
+      <h1 class="display-3 fw-bold hero-name">Abu Hurera</h1>
+      <p class="lead mt-2">
          <span id="typed"></span>
       </p>
+
+      <!-- Tech Stack -->
       <div class="tech-stack mt-4">
-         <div class="tech-item">Java</div>
-         <div class="tech-item">Spring Boot</div>
-         <div class="tech-item">React</div>
-         <div class="tech-item">Bootstrap</div>
-         <div class="tech-item">MySQL</div>
-         <div class="tech-item">GitHub Actions</div>
-         <div class="tech-item">CI/CD</div>
-         <div class="tech-item">REST API</div>
+         <span class="tech-item">Java</span>
+         <span class="tech-item">Spring Boot</span>
+         <span class="tech-item">React</span>
+         <span class="tech-item">Bootstrap</span>
+         <span class="tech-item">MySQL</span>
+         <span class="tech-item">GitHub Actions</span>
+         <span class="tech-item">CI/CD</span>
+         <span class="tech-item">REST API</span>
       </div>
-      <a href="#projects" class="btn btn-light mt-4">View My Work</a>
+
+      <!-- Button -->
+      <a href="#projects" class="btn hero-btn mt-4">
+         <i class="fas fa-briefcase me-2"></i> View My Work
+      </a>
    </section>
+
 
 
 
@@ -214,182 +223,184 @@
       </div>
    </section>
 
- <!-- CV Section -->
-<section id="download-cv" class="py-5 text-center cv-section" data-aos="zoom-in">
-  <div class="container">
-    <h2 class="mb-4">📄 My CV</h2>
-    <p class="mb-4">Want to know more about my skills and experience?  
-      View or Download my CV below.</p>
+   <!-- CV Section -->
+   <section id="download-cv" class="py-5 text-center cv-section" data-aos="zoom-in">
+      <div class="container">
+         <h2 class="mb-4">📄 My CV</h2>
+         <p class="mb-4">Want to know more about my skills and experience?
+            View or Download my CV below.</p>
 
-    <!-- Buttons -->
-    <a href="assets/files/Abu Hurera CV.pdf" download class="cv-btn me-2">
-      <i class="fas fa-download"></i> Download CV
-    </a>
+         <!-- Buttons -->
+         <a href="assets/files/Abu Hurera CV.pdf" download class="cv-btn me-2">
+            <i class="fas fa-download"></i> Download CV
+         </a>
 
-    <button class="cv-btn view-btn" data-bs-toggle="modal" data-bs-target="#cvModal">
-      <i class="fas fa-eye"></i> View CV
-    </button>
-  </div>
-</section>
-
-<!-- Modal -->
-<div class="modal fade" id="cvModal" tabindex="-1" aria-labelledby="cvModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="cvModalLabel">My CV Preview</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         <button class="cv-btn view-btn" data-bs-toggle="modal" data-bs-target="#cvModal">
+            <i class="fas fa-eye"></i> View CV
+         </button>
       </div>
-      <div class="modal-body">
-        <iframe src="assets/files/Abu Hurera CV.pdf" width="100%" height="600px" style="border:none;"></iframe>
+   </section>
+
+   <!-- Modal -->
+   <div class="modal fade" id="cvModal" tabindex="-1" aria-labelledby="cvModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="cvModalLabel">My CV Preview</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <iframe src="assets/files/Abu Hurera CV.pdf" width="100%" height="600px" style="border:none;"></iframe>
+            </div>
+         </div>
       </div>
-    </div>
-  </div>
-</div>
+   </div>
 
 
 
    <!-- Projects Section -->
-<section id="projects" class="bg-light py-5" data-aos="fade-up">
-  <div class="container">
-    <h2 class="text-center fw-bold mb-5">🚀 My Projects</h2>
-    <div class="row g-4">
+   <section id="projects" class="bg-light py-5" data-aos="fade-up">
+      <div class="container">
+         <h2 class="text-center fw-bold mb-5">🚀 My Projects</h2>
+         <div class="row g-4">
 
-      <!-- Project Card Template -->
-      <div class="col-md-6 col-lg-4">
-        <div class="project-card card border-0 shadow-lg h-100">
-          <div class="project-img-container">
-            <img src="assets/images/BusMangement.JPG" class="card-img-top" alt="Bus Management System">
-            <div class="overlay">
-              <a href="https://github.com/AbuHurera05/BusManagement/tree/master/BusManagement" 
-                 target="_blank" class="btn btn-light btn-lg fw-bold">
-                <i class="fab fa-github"></i> View Project
-              </a>
+            <!-- Project Card Template -->
+            <div class="col-md-6 col-lg-4">
+               <div class="project-card card border-0 shadow-lg h-100">
+                  <div class="project-img-container">
+                     <img src="assets/images/BusMangement.JPG" class="card-img-top" alt="Bus Management System">
+                     <div class="overlay">
+                        <a href="https://github.com/AbuHurera05/BusManagement/tree/master/BusManagement" target="_blank"
+                           class="btn btn-light btn-lg fw-bold">
+                           <i class="fab fa-github"></i> View Project
+                        </a>
+                     </div>
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title fw-bold">Bus Management System</h5>
+                     <p class="tech-stack">
+                        <span class="badge bg-danger"><i class="fab fa-java"></i> Java</span>
+                        <span class="badge bg-primary"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="badge bg-warning text-dark"><i class="fab fa-html5"></i> HTML/CSS</span>
+                        <span class="badge bg-success"><i class="fas fa-code"></i> JSP</span>
+                     </p>
+                     <p class="card-text text-muted">A complete bus booking and management system with admin & user
+                        dashboards.</p>
+                  </div>
+               </div>
             </div>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title fw-bold">Bus Management System</h5>
-            <p class="tech-stack">
-              <span class="badge bg-danger"><i class="fab fa-java"></i> Java</span>
-              <span class="badge bg-primary"><i class="fas fa-database"></i> MySQL</span>
-              <span class="badge bg-warning text-dark"><i class="fab fa-html5"></i> HTML/CSS</span>
-              <span class="badge bg-success"><i class="fas fa-code"></i> JSP</span>
-            </p>
-            <p class="card-text text-muted">A complete bus booking and management system with admin & user dashboards.</p>
-          </div>
-        </div>
-      </div>
 
-      <!-- JobSkill -->
-      <div class="col-md-6 col-lg-4">
-        <div class="project-card card border-0 shadow-lg h-100">
-          <div class="project-img-container">
-            <img src="assets/images/jobSkill.JPG" class="card-img-top" alt="JobSkill">
-            <div class="overlay">
-              <a href="https://github.com/AbuHurera05/JobSkill" target="_blank" 
-                 class="btn btn-light btn-lg fw-bold">
-                <i class="fab fa-github"></i> View Project
-              </a>
+            <!-- JobSkill -->
+            <div class="col-md-6 col-lg-4">
+               <div class="project-card card border-0 shadow-lg h-100">
+                  <div class="project-img-container">
+                     <img src="assets/images/jobSkill.JPG" class="card-img-top" alt="JobSkill">
+                     <div class="overlay">
+                        <a href="https://github.com/AbuHurera05/JobSkill" target="_blank"
+                           class="btn btn-light btn-lg fw-bold">
+                           <i class="fab fa-github"></i> View Project
+                        </a>
+                     </div>
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title fw-bold">JobSkill</h5>
+                     <p class="tech-stack">
+                        <span class="badge bg-danger"><i class="fab fa-java"></i> Java</span>
+                        <span class="badge bg-primary"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="badge bg-warning text-dark"><i class="fab fa-html5"></i> HTML/CSS</span>
+                        <span class="badge bg-success"><i class="fas fa-code"></i> JSP</span>
+                     </p>
+                     <p class="card-text text-muted">An online skill learning platform with job recommendation features.
+                     </p>
+                  </div>
+               </div>
             </div>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title fw-bold">JobSkill</h5>
-            <p class="tech-stack">
-              <span class="badge bg-danger"><i class="fab fa-java"></i> Java</span>
-              <span class="badge bg-primary"><i class="fas fa-database"></i> MySQL</span>
-              <span class="badge bg-warning text-dark"><i class="fab fa-html5"></i> HTML/CSS</span>
-              <span class="badge bg-success"><i class="fas fa-code"></i> JSP</span>
-            </p>
-            <p class="card-text text-muted">An online skill learning platform with job recommendation features.</p>
-          </div>
-        </div>
-      </div>
 
-      <!-- ChatApp -->
-      <div class="col-md-6 col-lg-4">
-        <div class="project-card card border-0 shadow-lg h-100">
-          <div class="project-img-container">
-            <img src="assets/images/ChatApp.png" class="card-img-top" alt="ChatApp">
-            <div class="overlay">
-              <a href="https://github.com/AbuHurera05/ChatApp" target="_blank" 
-                 class="btn btn-light btn-lg fw-bold">
-                <i class="fab fa-github"></i> View Project
-              </a>
+            <!-- ChatApp -->
+            <div class="col-md-6 col-lg-4">
+               <div class="project-card card border-0 shadow-lg h-100">
+                  <div class="project-img-container">
+                     <img src="assets/images/ChatApp.png" class="card-img-top" alt="ChatApp">
+                     <div class="overlay">
+                        <a href="https://github.com/AbuHurera05/ChatApp" target="_blank"
+                           class="btn btn-light btn-lg fw-bold">
+                           <i class="fab fa-github"></i> View Project
+                        </a>
+                     </div>
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title fw-bold">ChatApp</h5>
+                     <p class="tech-stack">
+                        <span class="badge bg-danger"><i class="fab fa-java"></i> Java</span>
+                     </p>
+                     <p class="card-text text-muted">A real-time chat application for instant messaging.</p>
+                  </div>
+               </div>
             </div>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title fw-bold">ChatApp</h5>
-            <p class="tech-stack">
-              <span class="badge bg-danger"><i class="fab fa-java"></i> Java</span>
-            </p>
-            <p class="card-text text-muted">A real-time chat application for instant messaging.</p>
-          </div>
-        </div>
+
+            <!-- Add more projects below as needed -->
+
+         </div>
       </div>
-
-      <!-- Add more projects below as needed -->
-
-    </div>
-  </div>
-</section>
+   </section>
 
 
-  <!-- Skill Section -->
-<section id="skills" class="container py-5" data-aos="fade-up">
-  <h2 class="text-center mb-5">🚀 My Skills</h2>
+   <!-- Skill Section -->
+   <section id="skills" class="container py-5" data-aos="fade-up">
+      <h2 class="text-center mb-5">🚀 My Skills</h2>
 
-  <div class="row gy-4">
+      <div class="row gy-4">
 
-    <div class="col-md-6">
-      <div class="skill-item">
-        <div class="skill-info">
-          <span><i class="fab fa-html5"></i> HTML</span>
-          <span class="skill-percent" data-percent="90">0%</span>
-        </div>
-        <div class="progress">
-          <div class="progress-bar gradient-html"></div>
-        </div>
+         <div class="col-md-6">
+            <div class="skill-item">
+               <div class="skill-info">
+                  <span><i class="fab fa-html5"></i> HTML</span>
+                  <span class="skill-percent" data-percent="90">0%</span>
+               </div>
+               <div class="progress">
+                  <div class="progress-bar gradient-html"></div>
+               </div>
+            </div>
+         </div>
+
+         <div class="col-md-6">
+            <div class="skill-item">
+               <div class="skill-info">
+                  <span><i class="fab fa-css3-alt"></i> CSS</span>
+                  <span class="skill-percent" data-percent="80">0%</span>
+               </div>
+               <div class="progress">
+                  <div class="progress-bar gradient-css"></div>
+               </div>
+            </div>
+         </div>
+
+         <div class="col-md-6">
+            <div class="skill-item">
+               <div class="skill-info">
+                  <span><i class="fab fa-js"></i> JavaScript</span>
+                  <span class="skill-percent" data-percent="70">0%</span>
+               </div>
+               <div class="progress">
+                  <div class="progress-bar gradient-js"></div>
+               </div>
+            </div>
+         </div>
+
+         <div class="col-md-6">
+            <div class="skill-item">
+               <div class="skill-info">
+                  <span><i class="fab fa-java"></i> Java</span>
+                  <span class="skill-percent" data-percent="85">0%</span>
+               </div>
+               <div class="progress">
+                  <div class="progress-bar gradient-java"></div>
+               </div>
+            </div>
+         </div>
+
       </div>
-    </div>
-
-    <div class="col-md-6">
-      <div class="skill-item">
-        <div class="skill-info">
-          <span><i class="fab fa-css3-alt"></i> CSS</span>
-          <span class="skill-percent" data-percent="80">0%</span>
-        </div>
-        <div class="progress">
-          <div class="progress-bar gradient-css"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-6">
-      <div class="skill-item">
-        <div class="skill-info">
-          <span><i class="fab fa-js"></i> JavaScript</span>
-          <span class="skill-percent" data-percent="70">0%</span>
-        </div>
-        <div class="progress">
-          <div class="progress-bar gradient-js"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-6">
-      <div class="skill-item">
-        <div class="skill-info">
-          <span><i class="fab fa-java"></i> Java</span>
-          <span class="skill-percent" data-percent="85">0%</span>
-        </div>
-        <div class="progress">
-          <div class="progress-bar gradient-java"></div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
+   </section>
 
 
 
