@@ -131,7 +131,14 @@ section {
 }
 
 
-/* Profile Image Style */
+/* Section Title Gradient */
+.text-gradient {
+  background: linear-gradient(90deg, #4b6cb7, #182848);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Profile Image Container */
 .profile-pic-container {
   position: relative;
   display: inline-block;
@@ -139,6 +146,7 @@ section {
   background: linear-gradient(135deg, #4b6cb7, #182848);
   border-radius: 50%;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 }
 
 .profile-pic {
@@ -154,14 +162,47 @@ section {
   transform: scale(1.06);
 }
 
-/* Badges Styling */
-.badge {
-  font-size: 0.9rem;
-  padding: 0.5em 0.75em;
-  border-radius: 20px;
-  margin-bottom: 5px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+/* Animated Ring Effect */
+.profile-ring {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  border-radius: 50%;
+  border: 3px dashed rgba(255, 255, 255, 0.5);
+  animation: spin 8s linear infinite;
 }
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+/* Skill Badges */
+.skill-badges .badge {
+  font-size: 0.9rem;
+  padding: 0.5em 0.9em;
+  border-radius: 20px;
+  margin: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-badges .badge:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Highlight Text */
+.highlight {
+  color: #4b6cb7;
+  font-weight: bold;
+}
+
+.about-list li {
+  margin-bottom: 8px;
+}
+
 /* CV Section Styling */
 .cv-section {
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
